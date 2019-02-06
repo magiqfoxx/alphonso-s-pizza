@@ -1,0 +1,86 @@
+body {
+  display: grid;
+  grid-template-areas: "nav title" "picture picture" "side main";
+
+  @media screen and (max-width: $break-medium) {
+    grid-template-areas: "title" "nav" "picture" "picture" "main" "side";
+  }
+}
+header {
+  margin-top: 3rem;
+
+  nav {
+    display: inline-block;
+    grid-area: picture;
+    transform: translateY(50%);
+    text-transform: uppercase;
+
+    ul {
+      list-style-type: none;
+
+      li {
+        display: inline;
+        padding: 3rem;
+
+        &:hover {
+          //text-decoration: underline;
+          padding-bottom: 0;
+          border-bottom-style: solid;
+          border-bottom-width: 1px;
+          border-bottom-color: $color-red;
+        }
+      }
+    }
+  }
+
+  h1 {
+    grid-area: title;
+    float: right;
+    margin-right: 3rem;
+  }
+}
+.picture {
+  clear: both;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  grid-area: picture;
+  img {
+    width: 100%;
+    display: block;
+    margin: -21.875% 0;
+  }
+}
+
+section {
+  display: inline-block;
+  width: 100%;
+  margin: 2rem 3rem;
+  margin-top: 10vh;
+
+  .address {
+    float: left;
+    width: 20%;
+    grid-area: side;
+    &::first-line {
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  main {
+    float: right;
+    margin-right: 6rem;
+    max-width: 70%;
+    grid: main;
+  }
+}
+
+footer {
+  display: block;
+  text-align: center;
+
+  p {
+    margin-top: 5vh;
+  }
+}
