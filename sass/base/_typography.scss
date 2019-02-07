@@ -1,33 +1,36 @@
 body {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: $font-size;
-    line-height: 1.7;
-    color: $color-gray;
-    padding: 3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: $font-size;
+  line-height: 1.7;
+  color: $color-gray;
+  padding: 3rem;
 
-    box-sizing:border-box;
+  box-sizing: border-box;
 }
-
-h1{
-    font-weight: 100;
-    font-size: 3rem;
-    text-transform: uppercase;
-    color: $color-gray;
-   
+a {
+  color: inherit;
+}
+h1 {
+  font-weight: 100;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: $color-gray;
 }
 
 nav {
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    color: $color-red;
-
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: $color-red;
+}
+nav a {
+  text-decoration: none;
 }
 
 .address {
-    color: $color-red;
+  color: $color-red;
 }
 
 .text {
-    color: $color-green;
+  color: $color-green;
 }

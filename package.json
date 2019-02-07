@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass sass/main.scss css/style.css "
+    "scss": "node-sass --watch sass -o css"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^4.9.3"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
   }
 }
